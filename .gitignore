@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+model/emotion_model.h5
+model/training_curves.png
+data/
+.env
+venv/
