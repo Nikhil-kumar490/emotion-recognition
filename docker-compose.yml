@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    devices:
+      - /dev/video0:/dev/video0
+    environment:
+      - DISPLAY=\
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ./model:/app/model
